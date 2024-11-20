@@ -1,0 +1,192 @@
+body {
+  color: #ccbf74;
+  align-content: center;
+  background:#000028; 
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+.header{
+  position: fixed;
+  
+}
+
+
+h1 {
+  text-align: center;
+  color: #ffffff; 
+}
+.annonceImages{
+  display: flex;
+  flex-direction: row;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+#signUpRegistration {
+  width: 300px;
+  margin: 50px auto;
+  background-color: #012b2d;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+#signUpRegistration {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 8px;
+  color: #ccbf74; 
+  display: flex; 
+  align-items: center;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="date"],
+form input[type="submit"] {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+form input[type="submit"] {
+  background-color: #ccbf74; 
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+
+.message {
+  text-align: center;
+  color: #ccbf74;; 
+}
+
+.message a {
+  color: #ccbf74; 
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#signIn {
+  display: block; 
+}
+
+
+#registration {
+  display: block; 
+}
+/*-------------------PAGE ANNONCE---------------------------*/
+
+
+h1 {
+    text-align: center;
+    color: #ffffff; /* Dark bluish text color */
+}
+
+#lesAnnonces {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.afficherAnnonces{
+ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    border: 10px;
+    margin: 10px;
+    justify-content: space-evenly;
+    
+    overflow-y: hidden;
+    overflow-x: hidden;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+   
+
+}
+
+.annonces {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  border-radius: 12px;
+  border: 2px;
+  transform: perspective(1500px) rotateY(5deg);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  transition: transform 1s ease 0s;
+}
+
+.annonces:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+strong {
+    color: #f4f4f4; /* Accent color for strong elements */
+    display: block;
+    margin-top: 10px;
+}
+/**************************************************/
+  .pushable {
+    background: #012b2d ;
+    border-radius: 2%;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+  }
+  .front {
+     
+    display: inline-block;
+    padding: 5px 5px;
+    border-radius: 2%;
+    font-size: x-large;
+    background: #A37CF0 ;
+    color: rgb(0, 0, 0);
+    transform: translateY(-6px);
+  }
+
+  .pushable:active .front {
+    transform: translateY(-2px);
+  }
+
+  .annonceDetailled{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  border-radius: 12px;
+  border: 2px;
+  transform: perspective(1500px) rotateY(5deg);
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  transition: transform 1s ease 0s;
+  }
+  .text{
+    background-color: #007FFF;
+    border:5px;
+    border-color: aquamarine;
+  }
+  .messages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .message_Date{
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }

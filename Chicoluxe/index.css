@@ -1,0 +1,144 @@
+body{
+    width:100%;
+    overflow-x:hidden;
+}
+.header_main_div{
+    display: flex;
+    flex-direction: row;
+}
+.titleProfilMessage{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.index_header{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  padding-top:1%;
+ background-color:#012b2d;
+ z-index: 10000;
+opacity: 1;
+}
+.container_chicoluxe{
+    width:fit-content;
+}
+#chicoluxe{
+    margin:5px;
+    width:90%;
+    display:flex;
+    justify-content:center;
+}
+.website_motto{
+    width:fit-content;
+    letter-spacing: 2px;
+    padding:0;
+    margin:0;
+    border:0;
+}
+.website_name h1{
+    font-size: xx-large;
+    letter-spacing: 0.2rem;
+
+}
+.selection_menu_link{
+    padding:10px;
+    margin:1px;
+}
+.category_link{
+    background-color:#012b2d;
+    text-decoration:none;
+}
+.category{
+  width: 300px;
+  height: 400px;
+  box-shadow:#000000 3px 3px 10px;
+  word-spacing:3px;
+  
+  color:#000000;
+}
+.category:hover{
+    transform: scale(1.01);
+}
+.main{
+  display:flex;
+  flex-direction: row;
+  height:max-content;
+  overflow-y:hidden;
+  overflow-x:scroll;
+}
+.main::-webkit-scrollbar {
+    display:hidden;
+}
+
+#private-jets {
+  background-image: url('../images/private-jets.webp');
+  background-size: cover; /* Adjusts the background image size to cover the entire container */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  background-position: center;
+  color: #ffffff;
+  text-shadow: #012b2d 1px 0 10px ;
+}
+#luxury-cars
+{
+  background-image: url('../images/car.webp');
+  background-size: cover; /* Adjusts the background image size to cover the entire container */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  background-position: center;
+  
+  color: #ffffff;
+  text-shadow: #012b2d 1px 0 10px ;
+}
+#yachts
+{
+  background-image: url('../images/yatch.webp');
+  background-size: cover; /* Adjusts the background image size to cover the entire container */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  background-position: center;
+  
+  color: #ffffff;
+  text-shadow: #012b2d 1px 0 10px ;
+}
+#real-estate{  
+    background-image: url('../images/realestate.webp');
+  background-size: cover; /* Adjusts the background image size to cover the entire container */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  background-position: center;
+  
+  color: #ffffff;
+  text-shadow: #012b2d 1px 0 10px ;}
+ #clothing{
+  background-image: url('../images/clothing.webp');
+  background-size: cover; /* Adjusts the background image size to cover the entire container */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  background-position: center;
+  
+  color: aliceblue;
+  text-shadow: #012b2d 1px 0 10px ;
+}
+#collectibles {
+background-image: url('../images/watch.webp');
+  background-size: cover; /* Adjusts the background image size to cover the entire container */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  background-position: center;
+  
+  color: aliceblue;
+  text-shadow: #012b2d 1px 0 10px ;
+}
+
+footer {
+    background-color: #333;
+    color: #EBB42C;
+    text-align: center;
+    padding: 2px;
+    position: fixed;
+    bottom: 10;
+    left: 0;
+    right: 0;
+    height:10px;
+    font-size:9px;
+}
+
+
+</style>

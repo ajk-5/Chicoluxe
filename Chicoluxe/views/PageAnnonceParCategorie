@@ -1,0 +1,51 @@
+          <style>
+            .lesAnnoncesParCategorie{
+                display: flex;
+                flex-direction: row;
+                padding: 8px;
+                border: 8px;
+                
+                overflow-y: hidden;
+                overflow-x: scroll;
+                text-align: center;
+                white-space: nowrap;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+                scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+                
+            }
+         .annoncesCategorie{
+          color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            padding: 8px;
+            border-radius: 12px;
+            border: 2px;
+            transform: perspective(1500px) rotateY(5deg);
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  transition: transform 1s ease 0s;
+
+  &:hover {
+    transform: perspective(300px) rotateY(5deg);
+  }
+         }
+         div {
+
+}
+          </style>
+          <?php
+            
+            foreach ($rows as $row) {
+            echo "<a href='../controllers/voirDetail.php?id={$row['annonceID']} ' style='text-decoration:none'>";
+            echo "<div class='annoncesCategorie' width='300 px' height='300 px'>";
+            echo '<div id="annonceImage" class="imageAnnoncesCategorie" style=" height:251px width:251px"><img src="data:image/jpeg;base64,' . base64_encode($row['photos']) . '" width="250" height="250" alt="Image"> </div></br>';
+            echo '<div><b>' . $row['TITRE'] . '</b></div>';
+            echo '<div> <span style="color:green">€' . $row['prix'] . '</span></div>';
+            $vendeur = recuperer_utilisateur_par_id($row['vendeurID']);
+            $rating=recupererEvaluationParUtilisateurID($row['vendeurID']);
+            echo '<div> ' . $vendeur["pseudo"] . '('.$rating.'⭐)</div> ';
+            echo '</div>';  
+            echo '</a>';
+            }
+           

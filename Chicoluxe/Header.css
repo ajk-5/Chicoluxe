@@ -1,0 +1,189 @@
+.header{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  padding-top:1%;
+ background-color:#012b2d;
+ z-index: 10000;
+opacity: 1;
+color: #EBB42C;;
+}
+
+.title-word {
+    letter-spacing: 3px;
+    font-size: large;
+    word-spacing: 0;
+    margin: -2px;
+  animation: color-animation 4s linear infinite;
+  text-shadow: #d4af37;
+}
+
+.title-word-1 {
+  --color-1: #d4af37;
+  --color-2: #d4af37;
+  --color-3: #d4af37;
+}
+
+.title-word-2 {
+    
+  --color-1: #d4af37;
+  --color-2: #000000;
+  --color-3: #000000;
+}
+
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+
+
+.title{
+    display:flex;
+    flex-direction:row;
+}
+
+ /*******************************************************************************/    
+#animate-charcter{
+display:flex;
+flex-direction: column;
+background-image: linear-gradient(
+-225deg,
+#231557 0%,
+#44107a 29%,
+#000080 67%,
+#87CEEB 100%
+);
+background-size: auto auto;
+background-clip: border-box;
+background-size: 200% auto;
+color: #fff;
+background-clip: text;
+text-fill-color: transparent;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: textclip 2s linear infinite;
+display: inline-block;
+font-size: 62px;
+}
+
+@keyframes textclip {
+to {
+background-position: 200% center;
+}
+}
+.golden_filter:hover{
+box-shadow: 3px 3px 3px black, -3px -3px 3px black;}
+.motto{
+color: #EBB42C;
+display: flex;
+font-size:20px;
+height:fit-content;
+width:fit-content;
+
+}
+
+.menu2{
+display: flex;
+background-color: #008b8b;
+flex-direction: row;
+
+background-image: linear-gradient(
+ -225deg,
+ #ffffff 0%,
+ #d4af37 29%,
+ #d3d61b 67%,
+ #d4af37 100%
+);
+background-size: auto auto;
+background-clip: border-box;
+background-size: 200% auto;
+color: #fff;
+background-clip: text;
+text-fill-color: transparent;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: textclip 5s linear infinite;
+display: inline-block;
+   font-size: 18px;
+}
+.span{
+padding: 20px;
+text-decoration: none;
+}
+.headerMenu{
+padding: 10px; 
+text-decoration: rgb(255, 255, 255);
+}
+.headerMenu2{
+ display: flex;
+ justify-content: space-evenly;
+ border-bottom:#87CEEB ;
+    }
+
+.titleProfilMessage{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+#profilMessage{
+    padding-right:2rem;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around; 
+}
+#profilMessage > * {
+    padding-right:2%;
+    padding:1%;
+}
+
+#menu post{
+    margin-left:-10px;
+    
+}
+
+#menu{
+    display:none;
+}
+.menu{
+    font-size: small;
+    position:absolute;
+    background-color: #012b2d;
+    color: #EBB42C;
+}
+.menu:hover {
+box-shadow: 3px 3px 3px black, -3px -3px 3px black;
+}
+.footer{
+    position:fixed;
+    display:flex;
+    bottom:5px;
+    right: 5px;
+}
+#side_menu_hidden{
+    height:100%;
+    width:10%;
+    background-color:#012b2d;
+    right:0%;
+}
+.cookie-banner{
+    display:block;
+    position:fixed;
+    bottom:20px;
+    left:20px;
+    background:#012b2d;
+    border: solid 2px #EBB42C;
+    z-index:1000;
+    
+}
+a:-webkit-any-link {
+    color: gold;
+    cursor: pointer;
+    text-decoration: none;
+}
