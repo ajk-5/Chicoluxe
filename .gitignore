@@ -1,3 +1,4 @@
 *.sql
 Chicoluxe/models/connexionDB.php
 Chicoluxe/models/*
+Chicoluxe/images/*
